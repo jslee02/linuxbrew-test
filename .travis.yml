@@ -1,0 +1,29 @@
+language: cpp
+
+sudo: required
+
+dist: trusty
+
+cache:
+  apt: true
+
+matrix:
+  include:
+    - os: linux
+      compiler: gcc
+      env: BUILD_TYPE=Debug CODECOV=ON COMPILER=GCC
+    - os: linux
+      compiler: gcc
+      env: BUILD_TYPE=Release CODECOV=OFF COMPILER=GCC
+    - os: linux
+      compiler: clang
+      env: BUILD_TYPE=Debug CODECOV=OFF COMPILER=CLANG
+    - os: linux
+      compiler: clang
+      env: BUILD_TYPE=Release CODECOV=OFF COMPILER=CLANG
+
+install:
+  - brew
+
+#script:
+#  - 
