@@ -31,6 +31,7 @@ install:
   - brew --version
   #- brew doctor
   - brew update > /dev/null
+  - brew install cmake
   - brew info dartsim
 
 #script:
