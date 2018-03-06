@@ -28,7 +28,8 @@ install:
   - echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profile
   - echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
   - PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-  - brew
+  - brew --version
+  - brew doctor
 
 #script:
 #  - 
