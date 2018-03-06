@@ -24,6 +24,7 @@ matrix:
 
 install:
   - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+  - PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
   - brew
 
 #script:
