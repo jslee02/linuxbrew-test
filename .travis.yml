@@ -23,6 +23,7 @@ matrix:
       env: BUILD_TYPE=Release CODECOV=OFF COMPILER=CLANG
 
 install:
+  - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
   - brew
 
 #script:
