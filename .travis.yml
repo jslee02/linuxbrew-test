@@ -29,7 +29,7 @@ install:
   - echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
   - PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
   - brew --version
-  - brew doctor
+  #- brew doctor
   - brew install dartsim
 
 script:
