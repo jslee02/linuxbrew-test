@@ -30,6 +30,7 @@ install:
   - PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
   - brew --version
   #- brew doctor
+  - brew update > /dev/null
   - brew install dartsim
 
 script:
